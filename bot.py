@@ -1,12 +1,4 @@
 import tweepy
-from datetime import date
-import calendar
-import time
-
-my_date = date.today()
-calendar.day_name[my_date.weekday()]
-
-
 
 ckey ='aDnftecvhJVUmMcOkNEtWUhPu'
 csecret = 's7dSrZ75TfkTb1JIcelQeSb3vGETWqXdWvjm17yzZWuoR77l5X'
@@ -22,5 +14,5 @@ while True:
     word='Hello' + str(c)
     api.update_status(word )
     c+=1
-    time.sleep(60)
+
 #api.update_status('Hello World')
