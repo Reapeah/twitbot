@@ -1,4 +1,12 @@
 import tweepy
+from datetime import date
+import calendar
+import time
+
+my_date = date.today()
+calendar.day_name[my_date.weekday()]
+
+
 
 ckey ='aDnftecvhJVUmMcOkNEtWUhPu'
 csecret = 's7dSrZ75TfkTb1JIcelQeSb3vGETWqXdWvjm17yzZWuoR77l5X'
@@ -11,8 +19,8 @@ auth.set_access_token(akey,asecret)
 api = tweepy.API(auth)
 c=1
 while True:
-    word='Hello' + str(c)
+    word="Today is " + str(calendar.day_name[my_date.weekday()]) +" which means it's " + str(calendar.day_name[my_date.weekday()])
     api.update_status(word )
     c+=1
-
+    time.sleep(86400)
 #api.update_status('Hello World')
