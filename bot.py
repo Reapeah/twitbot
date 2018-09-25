@@ -23,7 +23,7 @@ auth.set_access_token(akey,asecret)
 api = tweepy.API(auth)
 
 while True:
-    print(now.hour, ' ', now.minute')
+    print(now.hour, ' ', now.minute)
     if now.hour == 0 and now.minute == 0:
         word="Today is " + str(calendar.day_name[my_date.weekday()]) +" which means it's " + str(calendar.day_name[my_date.weekday()])
         api.update_status(word )
