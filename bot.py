@@ -1,4 +1,5 @@
 import tweepy
+import os
 from datetime import date
 import calendar
 import time
@@ -11,10 +12,10 @@ calendar.day_name[my_date.weekday()]
 
 
 
-ckey ='aDnftecvhJVUmMcOkNEtWUhPu'
-csecret = 's7dSrZ75TfkTb1JIcelQeSb3vGETWqXdWvjm17yzZWuoR77l5X'
-akey ='369656146-WKyNfoPVEE0w1VTlu5VFQnFzUaNa880HkFfbk57D'
-asecret = 'kng4JBJLATTVGkUpWZ8KG6YJicLUNwpbxNrW09nBx7iLW'
+ckey = os.getenv('CKEY'))
+csecret = os.getenv('CSECRET'))
+akey = os.getenv('AKEY'))
+asecret = os.getenv('ASECRET'))
 
 auth =  tweepy.OAuthHandler(ckey,csecret)
 auth.set_access_token(akey,asecret)
