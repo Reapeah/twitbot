@@ -12,10 +12,10 @@ calendar.day_name[my_date.weekday()]
 
 
 
-ckey = os.getenv('CKEY'))
-csecret = os.getenv('CSECRET'))
-akey = os.getenv('AKEY'))
-asecret = os.getenv('ASECRET'))
+ckey = os.getenv('CKEY')
+csecret = os.getenv('CSECRET')
+akey = os.getenv('AKEY')
+asecret = os.getenv('ASECRET')
 
 auth =  tweepy.OAuthHandler(ckey,csecret)
 auth.set_access_token(akey,asecret)
