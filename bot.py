@@ -24,5 +24,4 @@ api = tweepy.API(auth)
 
 while True:
     print('9')
-    time.sleep(60)
 #api.update_status('Hello World')
