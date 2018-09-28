@@ -23,7 +23,7 @@ auth.set_access_token(akey,asecret)
 api = tweepy.API(auth)
 
 while True:
-    api.update_status('hello to me')
+    api.update_status('kiko')
     time.sleep(90)
         
 #api.update_status('Hello World')
