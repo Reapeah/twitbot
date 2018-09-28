@@ -21,11 +21,10 @@ auth =  tweepy.OAuthHandler(ckey,csecret)
 auth.set_access_token(akey,asecret)
 
 api = tweepy.API(auth)
-
+print(now.hour,now.minute)
 while True:
-    if now.hour == 11 and now.minute == 50:        
-	word="Today is " + str(calendar.day_name[my_date.weekday()]) +" which means it's " + str(calendar.day_name[my_date.weekday()])       
-	api.update_status(word )    
-	time.sleep(120)
-        
+    if now.hour == 11 and now.minute == 57:        
+        word="Today is " + str(calendar.day_name[my_date.weekday()]) +" which means it's " + str(calendar.day_name[my_date.weekday()])       
+        api.update_status(word)    
+        time.sleep(120)
 #api.update_status('Hello World')
