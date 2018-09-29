@@ -24,7 +24,7 @@ api = tweepy.API(auth)
 print(now.hour,now.minute)
 
 curr_hour = 0
-curr_min = 0
+curr_min = 50
 
 while True:
     if now.minute == curr_min:        
