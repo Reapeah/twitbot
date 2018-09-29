@@ -27,11 +27,9 @@ curr_hour = 0
 curr_min = 50
 
 while True:
-    if now.minute == curr_min:        
-        word="The current time is " + now.hour + ":" + now.minute
-        curr_min += 10
-        if curr_min >= 60:
-            curr_min = 0
+    now = datetime.datetime.now()
+    if now.hour == 0 and now.minute == 0:        
+        word="Today is " + str(calendar.day_name[my_date.weekday()]) +" which means it's " + str(calendar.day_name[my_date.weekday()])       
         api.update_status(word)    
         time.sleep(120)
 #api.update_status('Hello World')
