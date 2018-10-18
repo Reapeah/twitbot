@@ -22,7 +22,7 @@ auth =  tweepy.OAuthHandler(ckey,csecret)
 auth.set_access_token(akey,asecret)
 
 api = tweepy.API(auth)
-print(now.hour,now.minute)
+
 
 curr_hour = 0
 curr_min = 50
